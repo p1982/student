@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Exercise 5</title>
+   <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>Modal Example</h2>
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn" data-target="#myModal">Open Modal</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+    </div>
+
+<!-- 
+Напишите код, который работает так:
+1. При клике на кнопку с id="myBtn" появляется модальное окно с id="myModal".
+2. При клике на крестик внутри модального окна оно закрывается. -->
+
+    <script>
+     /*
+    1. Сохранить ссылку на кнопку с id="myBtn" в переменнную.
+    2. добавить событие для кнопки, в котором:
+        - Используя кнопку ссчитать ссылку на всплывающее окно;
+        - свойство display модального окна становиться равным block;
+    3. Найти ссылку на крестик внутри модального окна.
+    4. повесить событие на крестик, в котором:
+        - найти ближайщего родителя с class="modal";
+        - установить для него свойство display="none";
+     */
+
+     const modalButton = document.getElementById('myBtn')
+     modalButton.addEventListener('click', function(){
+       const modalLink = modalButton.dataset.target;
+       const modalWindow = document.querySelector(modalLink);
+       modalWindow.style.display = 'block';
+     });
+
+     const modalClose = document.querySelector('.modal .close');
+     modalClose.addEventListener('click', function(){
+         const modalWindow = this.closest('.modal');
+         modalWindow.style.display = 'none';
+     });
+    </script>
+
+
+</body>
+
+</html>

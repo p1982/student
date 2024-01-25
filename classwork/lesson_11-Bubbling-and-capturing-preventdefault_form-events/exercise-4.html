@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+   <form action="" id="appointment-to-doctor">
+     <h2>Запись к врачу</h2>
+      <div class="form-group">
+        <select name="doctor-type" id="select-doctor">
+           <option value="">Выберите врача</option>
+           <option value="cardio">Кардиолог</option>
+           <option value="therapist">Терапевт</option>
+           <option value="dentist">Стоматолог</option>
+       </select>
+      </div>
+      <div class="form-group">
+         <label for="visit-date">Дата визита</label>
+          <input id="visit-date" type="date">
+      </div>
+      <div class="form-group">
+          <label for="confirm-info">Подтверждаю правильность введной информации</label>
+          <input id="confirm-info" name="agree" type="checkbox">
+      </div>
+      <input type="submit" value="Записаться">
+   </form>
+    <script>
+        /*
+        Напишите код, который работает так:
+        1. Пользователь выбирает одного врача из списка. В зависимости от выбраного врача, 
+        под выпадающим списком появляютя дополнительные поля ввода:
+        - Кардиолог: возвраст; индекс массы тела.
+        - Терапевт: возраст; диагнозы;
+        -Стоматолог: дата последнего визита.
+        2. Когда пользователь нажимает "Записаться": 
+        - если выбран врач, заполнены все обязательные поля (возраст для кардиолога и терапевта, дата последнего визита для стоматолога), 
+        выбрана дата визита и установлена галочка для "Подтверждаю правильность введной информации" - под формой выводится надпись 
+        "Поздравляю, вы успешно записались на датаВизита";
+        - если же что-то не заполнено - под незаполненым полем появляется надпись "Это поле обязательно для заполнения"
+        */
+
+        const selectedDoctor = document.getElementById('select-doctor');
+        selectedDoctor.addEventListener('change', function(){
+            console.log(this.value)
+            if(this.value ==='cardio'){
+                this.insertAdjacentHTML('afterend', `<div class="form-group">
+                                                    <input id="age" type="number" placeholder="enter your age">, 
+                                                    <input id="bodyWeightIndex" type="number" placeholder="enter your body weight index"> 
+                                                    </div>`);
+
+               
+            }
+            else if(this.value ==='therapist'){
+                this.insertAdjacentHTML('afterend', `<input id="age" type="number" placeholder="enter your age">, 
+                                                    <input id="diagnose" type="text" placeholder="enter your diagnose">`);
+
+            }
+            else{
+                this.insertAdjacentHTML('afterend', '<input id="previousDate" type="date" placeholder="enter your previous date">');
+            }
+        });
+
+        const doctorForm = document.getElementById('appointment-to-doctor')
+        doctorForm.addEventListener('submit', function(e){
+            e.preventDefault();
+            console.log(this.querySelector("[name='agree']").checked)            
+        })
+        
+    </script>
+</body>
+</html>

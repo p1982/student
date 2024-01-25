@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    /* 
+    Нюанс if в том, что любые выражения или переменные внутри него в конечном итоге превращаются в true или false, 
+    что бы там в начале не было. Примеры:
+    */
+    const nullVariable = null;
+        if(!nullVariable) {
+            console.log("null превращается в true");
+        }
+        // else {
+        //     console.log("null превращается в false");
+        // }
+
+        let variable;
+        if(variable) {
+            console.log("undefined превращается в true");
+        }
+        else {
+            console.log("undefined превращается в false");
+        } 
+
+        const emptyStr = "";
+        if(emptyStr) {
+            console.log("пустая строка превращается в true");
+        }
+        else {
+            console.log("пустая строка превращается в false");
+        }
+
+        const zeroVariable = 0;
+        if(zeroVariable) {
+            console.log("0 превращается в true");
+        }
+        else {
+            console.log("0 превращается в false");
+        }
+
+        if(" ") {
+            console.log("просто пробелы превращаются в true");
+        }
+        else {
+            console.log("просто пробелы превращаются в false");
+        }          
+        
+    </script>
+</body>
+</html>

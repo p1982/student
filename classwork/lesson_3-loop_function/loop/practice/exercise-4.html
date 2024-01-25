@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!-- Задача: Пользователь вводит количество
+своих предметов в этом семестре.
+После чего спросить у него оценки за каждый предмет,
+и в итоге ввывести в консоль минимальную и максимальную оценки   -->
+<script>
+    const subjectCount = +prompt("Введите количество предметов");
+    let minMark = 13;
+    let maxMark = 0;
+    for (let i = 1; i <= subjectCount ; i++) {
+        const mark = +prompt(`Введите вашу оценку за ${i} предмет`);
+        if(minMark > mark) {
+            minMark = mark;
+        }
+        if(maxMark < mark) {
+            maxMark = mark;
+        }
+    }
+    console.log(`minMark - ${minMark}`);
+    console.log(`MaxMark - ${maxMark}`);
+
+
+</script>
+</body>
+</html>

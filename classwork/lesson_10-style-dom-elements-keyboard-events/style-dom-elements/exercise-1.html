@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    .btn {
+        display: inline-block;
+        text-decoration: none;
+        padding: 15px 10px;
+
+        border-radius: 5px;
+    }
+    .btn-red {
+        color: red;
+        border: 1px solid red;
+    }
+.btn-red.active {
+    background-color: red;
+    color: white;
+}
+</style>
+
+<body>
+    <a id="first-button" href="#" class="btn btn-red">Click me!</a>
+    
+<!--   Сделайте так, чтобы при первом клике на кнопку ее
+фон менялся на красный, цвет текста -на белый,
+а текст внутри кнопки на "Eat me!".
+При повторном клике все возвращалось обратно.
+   Код нужно писать руками, а не копировать из примера. -->
+    
+    <script> 
+        const button = document.getElementById("first-button")
+        button.addEventListener("click", function(){
+            // console.log(this.className);          
+            const arr = this.className.split (" ");
+            // console.log(arr)
+            const index = arr.indexOf("active");
+            if (index != -1){
+                arr.splice(index, 1);
+                this.className = arr.join(" ");
+            }
+            else {
+                this.className += " active";
+            }
+        });
+        
+    </script>
+</body>
+
+</html>

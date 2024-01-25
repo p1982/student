@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Логический оператор «И» возвращает первую ложь, или как еще говорят "спотыкается на лжи"
+
+        console.log(true && true); // true
+        console.log(false && true); // false
+        console.log(true && false); // false
+        console.log(false && false); // false
+        console.log(true && true && false && true); // false
+
+        const name = "Рамзес";
+        const lastName = "III";
+
+        if(name === "Рамзес" && lastName === "II") {
+            console.log("На вас равнялся Озимандия!");
+        }
+        else {
+            console.log("Вы Александр Великий - всего ли подражатель")
+        }
+
+    </script>
+</body>
+
+</html>

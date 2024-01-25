@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- Спросить у пользователя сколько в час панда съедает пельмешек.
+    Потом спросить сколько у панды есть часов пока не прийдет
+    смотритель зоопарка.
+    После - количество приготовленных бабушкой пельмешек.
+    Вывести в консоль количество оставшихся пельмешек после прихода
+    смотрителя.-->
+
+
+<script>
+    const count = prompt("сколько в час панда съедает пельмешек?");
+    const timeLeft = prompt("сколько осталось времени?");
+    const totalEat = prompt("приготовленные пельмешки")
+
+    const result = totalEat - timeLeft * count;
+    if (result > 0) {
+        console.log(result)
+    } else {
+        console.log(0)
+    }
+    ;
+</script>
+</body>
+</html>

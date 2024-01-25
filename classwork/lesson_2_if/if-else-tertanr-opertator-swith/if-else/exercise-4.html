@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--   Пользователь вводит 3 числа.
+ Вывести в консоль сообщение с максимальным числом из введённых.
+
+ Если одно из введённых пользователем чисел не является числом,
+ вывести сообщение: «⛔️ Ошибка! Одно из введённых чисел не является числом.».
+
+ Условия: объектом Math пользоваться нельзя.  
+ -->
+<script>
+    const number1 = prompt("Ввидите первое число");
+    const number2 = prompt("Ввидите второе число");
+    const number3 = prompt("Ввидите третье число");
+    const text = "Найбольшое число "
+     if(number1 > number2 && number1 > number3 ){
+         console.log(`${text} ${number1}`)
+     } else if (number2 > number1 && number2 > number3){
+         console.log(`${text} ${number2}`)
+     }
+     else {
+         console.log(`${text} ${number3}`)
+     }
+</script>
+</body>
+</html>

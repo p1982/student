@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!-- Перепишите предыдущую задачу так: 
+- функция может получать как 1 авгумент, как и 2.
+- если она получает один аргмент, то категория прав равна "B1".  -->
+<script>
+    let userAge = +prompt('Введите свой возраст');
+    let userDriverCategory = prompt('Введите желаемую категорию');
+    console.log(isDriverLegal(userAge));
+    console.log(isDriverLegal(userAge, userDriverCategory));
+
+    function isDriverLegal(age, driverLegal = "B1") {
+        // if(driverLegal === undefined) {
+        //     driverLegal = "B1";
+        // }
+        if (age >= 16 && (driverLegal === "A1" || driverLegal === "A2")) {
+            return true;
+        }
+        if (age >= 18 && (driverLegal === "B1" || driverLegal === "B2")) {
+            return true;
+        }
+
+        return false;
+    }
+</script>
+</body>
+</html>

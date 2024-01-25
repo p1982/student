@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+<!-- Напишите функцию isSpam, которая получает
+в качестве аргумента строку, и возвращает true,
+если слово "http://" встречается 2 и чаще раз
+в переданной строке, и false - если меньше 2х.  -->
+<script>
+    const str1 = "Вы можете зайти на http://google.com и найти ответ, вместо того, чтобы спрашивать в комментариях";
+    const str2 = "Вы можете зайти на http://new-shop.com.ua и купить то, что вам нужно. А если вы не выбрать подарок, то вас проконсультируют профессионалы по телефонам: http://new-shop.com.ua/contacts";
+
+    console.log(isSpam(str1));
+    console.log(isSpam(str2));
+
+    function isSpam(str) {
+        let index = str.indexOf("http://");
+        if (index !== -1) {
+            index++;
+            index = str.indexOf("http://", index);
+            return (index !== -1);
+        }
+        return false;
+    }
+
+</script>
+</body>
+</html>

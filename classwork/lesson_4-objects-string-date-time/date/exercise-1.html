@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--   Спросите у ползователя номер месяца
+    и выведите ему колиичество дней
+    в этом месяце в этом году. -->
+    <script>
+        /*
+        const date = new Date(2020, 3, 0);
+        console.log(date.getDate());
+        */
+        const month = +prompt('Enter month');
+        const year = new Date().getFullYear();
+        const days = new Date(year, month, 0).getDate();
+        console.log(days);
+
+
+    </script>
+</body></html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const user = {
+            name: "Александр",
+            lastName: "IV",
+            age: 42
+        };
+
+        const arr = ["Алина", "Фанни", "Декстер", "Кабанчик"];
+        console.log(user);
+        console.log(arr);
+
+        const objToStr = JSON.stringify(user);
+        const arrToStr = JSON.stringify(arr);
+
+        console.log(objToStr);
+        console.log(arrToStr)
+
+        const strToObj = JSON.parse(objToStr);
+        const strToArr = JSON.parse(arrToStr);
+
+        console.log(strToObj);
+        console.log(strToArr);
+    </script>
+</body>
+
+</html>

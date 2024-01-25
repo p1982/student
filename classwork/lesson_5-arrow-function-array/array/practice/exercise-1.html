@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--  
+    Представьте себя персонажем мультфильма "Рататуй". Вас просят подать завтрак, состоящий из определенного числа блюд 
+    (блюда перечисленны в массиве frenchBreakfeast). 
+    Но поскольку вы эталонный француз, вы знаете, что на завтрак можно есть не больше 3х блюд. А остальные нужно перенести на обед.
+    Задача: Если в завтраке (frenchBreakfeast) больше 3х наименований, перенести остальные блюда на обед (массив frenchDinner).
+    Дополнительная задача: угадайте, кто вдохновил меня на написание этого упражнения.
+    -->
+    <script>
+        const frenchBreakfeast = ["круассаны", "Креп Сюзетт", "французский пудинг", "венские сосиски", "тосты с ягодным маслом", "омлет с ветчиной и помидорами"];
+        const frenchDinner = [];
+        while (frenchBreakfeast.length > 3) {
+            const food = frenchBreakfeast.pop();
+            frenchDinner.push(food);
+        }
+        console.log(frenchBreakfeast);
+        console.log(frenchDinner);
+    </script>
+</body></html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+        .modal.active {
+            display: block;
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>Modal Example</h2>
+
+    <!-- Trigger/Open The Modal -->
+    <button class="btn btn-modal" data-target="#first-modal">Open First Modal</button>
+
+    <button class="btn btn-modal" data-target="#second-modal">Open Second Modal</button>
+
+    <button class="btn btn-modal" data-target="#third-modal">Open Third Modal</button>
+
+    <div id="first-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Первое всплывающее окно</p>
+        </div>
+    </div>
+
+    <div id="second-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Второе всплывающее окно</p>
+        </div>
+    </div>
+
+    <div id="third-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Третье всплывающее окно</p>
+        </div>
+    </div>
+
+<!-- Напишите код, который работает так:
+ 1. при клике на кнопку с id="myModal" показывает всплывающее окно, селектор которого хранится в data-target кнопки.
+ 2. При клике на крестик внутри или на серую область за пределами окна - окно закрывается.
+-->
+
+    <script>
+        /*
+        1. Достучаться до button с id=myBtn. 
+       2. Повесить обрабротчик события click на элемент.
+       3. Считать значение атрибута с data-target кнопки.
+       4. Найти элемент по считаному селектору 
+       5. Добавить ему класс Active.
+       6. Найти div c id=myModal
+       7. Повесить на него событие click.
+       8. Если элемент внутри окна, на котором произшло событие, имеет класс "close" (то есть это крестик)
+       или 
+       */
+      const modalButtons = document.querySelectorAll('.btn-modal');
+      modalButtons.forEach(button =>  button.addEventListener('click', function(e){
+          const modalSelector = this.dataset.target;
+          const modalWindow = document.querySelector(modalSelector);
+          modalWindow.classList.add('active');
+      }));
+     
+      const modalWindows = document.querySelectorAll('.modal');
+      modalWindows.forEach(modal => modal.addEventListener('click', function(e){
+        //   console.log(e.target);
+          if (e.target.classList.contains('close') || e.target === this){
+              this.classList.remove('active');
+          }
+      }));
+      
+      
+    </script>
+
+
+</body>
+
+</html>

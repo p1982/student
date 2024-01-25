@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 1140px;
+            margin: 0 auto;
+        }
+        
+        .content-center {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .people-list {
+            list-style: none;
+            font-size: 24px;
+        }
+        
+        .people-list-item {
+            cursor: pointer;
+        }
+        
+        .people-list-item.active {
+            font-weight: bold;
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <!--  Вот вам список боевых горничных отряда "Плеяды".
+    А при клике на элемент шрифт должен становится жирным,
+    а фон - светло-серым. При повторном клике - все должно
+    возвращаться обратно   -->
+    <div class="container">
+        <div class="content-center">
+            <ul class="people-list">
+                <li class="people-list-item">- Юри Альфа</li>
+                <li class="people-list-item">- Люпусрегина Бета</li>
+                <li class="people-list-item">- Нарберал Гамма</li>
+                <li class="people-list-item">- Сидзу Дельта</li>
+                <li class="people-list-item">- Солюшен Эпсилон</li>
+                <li class="people-list-item">- Энтома Василисса Дзета</li>
+                <li class="people-list-item">- Аурелия Омега</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const menuItems = document.querySelectorAll('.people-list-item');
+        menuItems.forEach(elem => elem.addEventListener("click", function() {
+            this.classList.toggle('active');
+        }))
+    </script>
+</body>
+
+</html>

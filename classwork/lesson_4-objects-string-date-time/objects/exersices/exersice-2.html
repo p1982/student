@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- Напишите метод cloneObj, полностью копирующий объект без передачи по ссылке  -->
+<script>
+    
+    const jedi = {
+        name: "Маленький Йода",
+        friend: "Мандалорец",
+        music: "Eminem"
+    };
+    const mandalor = cloneObj(jedi);
+    /*
+     var obj = jedi;
+     console.log(obj);
+     const tempObj = {};
+     let key = "name";
+     tempObj[key] = obj[key]; // tempObj["name"] = obj["name"] ; // obj["name"] === jedi["name"];
+     let key = "friend";
+     tempObj[key] = obj[key]; // tempObj["friend"] = obj["friend"] ; // obj["friend"] === jedi["friend"];
+     let key = "music";
+     tempObj[key] = obj[key]; // tempObj["music"] = obj["music"] ; // obj["music"] === jedi["music"];
+     const mandalor = tempObj;
+     delete tempObj;
+     */
+    console.log(mandalor);
+    jedi.music = "Сопливые песенки";
+    console.log(jedi.music);
+    console.log(mandalor.music);
+
+    function cloneObj(obj) {
+        console.log(obj);
+        const tempObj = {};
+        for (const key in obj){
+            tempObj[key]=obj[key];
+        }
+        return tempObj;
+
+    }
+
+</script>
+</body>
+</html>

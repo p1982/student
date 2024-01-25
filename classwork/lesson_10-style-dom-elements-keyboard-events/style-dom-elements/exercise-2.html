@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+        ul {
+            list-style: none;
+        }
+
+        .top-menu {
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar-nav {
+            display: flex;
+        }
+
+        .navbar-nav-link {
+            background-color: #000;
+            text-decoration: none;
+            color: white;
+            font-family: Arial;
+            display: inline-block;
+            padding: 10px 15px;
+        }
+
+        .navbar-nav-link.active {
+            background-color: red;
+            font-weight: bold;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="top-menu">
+        <div class="navbar-nav" id="top-menu">
+
+                <a href="#" class="navbar-nav-link active">HOME</a>
+
+                <a href="#" class="navbar-nav-link">ABOUT US</a>
+
+                <a href="#" class="navbar-nav-link">OUR FEATURES</a>
+
+                <a href="#" class="navbar-nav-link">OUR WORKS</a>
+
+                <a href="#" class="navbar-nav-link">BLOG</a>
+
+                <a href="#" class="navbar-nav-link">CONTACT US</a>
+
+        </div>
+        <!-- <ul class="navbar-nav">
+            <li class="navbar-nav-item">
+                <a href="" class="navbar-nav-link">Item 1</a>
+            </li>
+            <li class="navbar-nav-item">
+                <a href="" class="navbar-nav-link">Item 2</a>
+            </li>
+            <li class="navbar-nav-item">
+                <a href="" class="navbar-nav-link">Item 3</a>
+            </li>
+            <li class="navbar-nav-item">
+                <a href="" class="navbar-nav-link">Item 4</a>
+            </li>
+            <li class="navbar-nav-item">
+                <a href="" class="navbar-nav-link">Item 5</a>
+            </li>
+        </ul> -->
+    </div>
+
+<!-- Напишите код, который работает так: при клике на пункт меню
+его фон меняется на красный и текст становится жирным. Но при этом если до этого был выбран
+ другой пункт меню, у него красный фон исчезает
+ (чтобы не получилось два красных пункта меню)  -->
+    <script>
+        const menuElements = document.querySelectorAll(".navbar-nav-link");
+        menuElements.forEach(elem => elem.addEventListener("click", function (){
+            const menuContainer = this.closest(".navbar-nav");
+           const allMenuItems = menuContainer.querySelectorAll(".navbar-nav-link.active");
+           if(allMenuItems.length) {
+               allMenuItems[0].classList.remove("active");
+           }
+           this.classList.add("active");
+        })); 
+    </script>
+</body>
+
+</html>

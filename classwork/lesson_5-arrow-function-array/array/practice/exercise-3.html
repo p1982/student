@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--   
+    Напишите функцию getCamaleCase, которая в качестве аргумента принимает строку со словами через пробел, и возвращает строку в формате CameleCase. Пример:
+   
+   let str = getCamaleCase("New filtERed Array");
+   console.log(str); // Выведет newFilteredArray    
+   -->
+    <script>
+        // function getCamaleCase(str) {
+        //     str = str.toLowerCase();
+            
+        //     const strArr = str.split(" ");
+        //     for(let i = 1; i < strArr.length; i++) {
+        //         console.log(strArr[i]); // элемент массива - слово
+        //         console.log(strArr[i][0]); // первая буква каждого слова
+        //         console.log(strArr[i].slice(1)); // возвращает подстроку, начиная от 2 буквы слова и до конца
+        //         strArr[i] = strArr[i][0].toUpperCase() + strArr[i].slice(1);
+        //         // strArr[i] = "f".toUpperCase() + "iltered";
+        //         // strArr[i] = "F" + "iltered";
+        //     }
+        //     return strArr.join("");
+        // }
+function getCamaleCase(str){
+    str=str.toLowerCase()
+    const arr = str.split(" ")
+    const newArr = arr.map((item, index) => {
+        if(index>=1){
+           return console.log(item[0].toUpperCase()+arr[index].slice(1))
+        }
+
+    })
+}
+        const string = getCamaleCase("New FiltEred Array");
+        console.log(string); // Выведет newFilteredArray
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--  
+ Написать программу, которая будет приветствовать пользователя.
+ Сперва пользователь вводит своё имя,
+ после чего программа выводит в консоль сообщение с учётом его должности.
+ *
+ Список должностей:
+ Mike — CEO;
+ Jane — CTO;
+ Walter — программист:
+ Oliver — менеджер;
+ John — уборщик.
+
+Используйте конструкцию switch-case.
+
+  -->
+<script>
+    let userName = prompt("Enter user name");
+    const text = "Добро пожаловать "
+
+    switch (userName) {
+        case "Mike":
+            console.log(`${text}CEO`)
+            break
+        case "Jane":
+            console.log(`${text}CTO`)
+            break
+        case "Walter":
+            console.log(`${text}программист`)
+            break
+        case "Oliver":
+            console.log(`${text}менеджер`)
+            break
+        case "John":
+            console.log(`${text}уборщик`)
+            break
+    }
+
+
+</script>
+</body>
+</html>

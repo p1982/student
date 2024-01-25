@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const userName = prompt("Введите логин");
+      /*
+        if (userName === "admin") {
+            console.log("Добро пожаловать, господин!");
+        } else if (userName === "content manager") {
+            console.log("Где ты был? Работа уже заждалась!");
+        } else if (userName === "user") {
+            console.log("Руками ничего не трогать!");
+        } else {
+            console.log("Ты вообще кто такой?");
+        }
+*/
+
+        switch (userName) {
+            case "admin": // if(userName === "admin")
+                console.log("Добро пожаловать, господин!");
+                console.log("Мы заждались!");
+                break;
+            case "content manager":
+                console.log("Где ты был? Работа уже заждалась!");
+                break;
+            case "user":
+                console.log("Руками ничего не трогать!");
+                break;
+            default:
+                console.log("Ты вообще кто такой?");
+        }
+
+    </script>
+</body>
+
+</html>

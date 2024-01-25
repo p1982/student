@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Создайте объект student, в котором будут такие
+свойтва:
+- name;
+-last name;
+tabel - объект, хранящий все предметы с оценками.
+и добавьте методы, вычисляющие:
+- средний бал;
+- худший бал;
+- лучший бал;-->
+<script>
+    // const student = {
+    //     name: 'Fanni',
+    //     'last name': 'Malevych',
+    //     tabel: {
+    //         history: 5,
+    //         math: 4,
+    //         english: 3,
+    //         geography: 5,
+    //         physics: 5
+    //     },
+    //     getAverageScore: function (){
+    //         let scoreSum = 0;
+    //         let scoreCount = 0;
+    //         for(let key in this.tabel){
+    //             scoreCount++;
+    //             scoreSum +=this.tabel[key];
+    //         }
+    //         return scoreSum/scoreCount;
+    //     },
+    //     getWorstScore: function(){
+    //         let worstMark = 6;
+    //         for(let key in this.tabel){
+    //             if (worstMark>this.tabel[key]){
+    //                 worstMark = this.tabel[key]
+    //             }
+    //         }
+    //         return worstMark;
+    //     },
+    //     getBestScore: function () {
+    //         let bestScore = 0;
+    //         for (let key in this.tabel){
+    //             if( bestScore<this.tabel[key]){
+    //                 bestScore = this.tabel[key];
+    //             }
+    //         }
+    //         return bestScore;
+    //     }
+    // }
+    // console.log(student.getAverageScore());
+    // console.log(student.getWorstScore());
+    // console.log(student.getBestScore());
+
+    const student = {
+  name: "Victor",
+  lastName: "Smith",
+  tabel:{
+    math: 5,
+    english: 3,
+    literature:2
+   },
+getAverageScore: function(){
+  let sum = 0;
+  let counter = 0;
+  for(let key in this.tabel){
+    sum += this.tabel[key];
+    counter++;  
+    console.log(sum)
+  }
+  return sum / counter;
+},
+getLowestScore(){
+  let lowest = 5;
+  for(let key in this.tabel){
+      console.log(this.table[key])
+    if(lowest>this.tabel[key]){
+      lowest = this.table[key];
+    }
+  }
+  return lowest;
+},
+
+}
+// const average = student.getAverageScore();
+const lowest = student.getLowestScore();
+// console.log(average);
+console.log(lowest);
+
+
+</script>
+</body>
+</html>

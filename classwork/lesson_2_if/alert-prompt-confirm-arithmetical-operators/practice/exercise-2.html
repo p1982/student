@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Объяснить поведение каждое операции.
+
+        let x, y, z;
+
+        x = 6;
+        y = 15;
+        z = 4;
+        console.log((z = --x - y * 5)); // -70
+
+        x = 6;
+        y = 15;
+        z = 4;
+        console.log((y /= x + (5 % z)));//2 1/7
+        /*
+        let a = 5;
+        a = a + 7;
+        a +=7;
+        */
+
+        x = 6;
+        y = 15;
+        z = 4;
+        console.log((x += y - x++ * z));//-3
+        console.log(x);
+        /*
+        const str = "new Vegas";
+        console.log("new Vegas - ", !!str);
+        */
+        console.log(!!'false' == !!'true');//true
+        console.log('true' == true);//false
+        console.log('true' === true);//false
+        console.log(NaN == 1);//false
+        console.log(NaN == NaN);//false
+        console.log(NaN === NaN);//false
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!-- Спросите у пользователя год и
+выведите сообщение является ли он высокосным  -->
+<script>
+
+    let userYear = +prompt('введите год');
+    const days = new Date(userYear, 2, 0).getDate();
+
+    const prefix = (days === 29) ? "" : "не";
+    console.log(`${userYear} ${prefix}высокосный`);
+
+    </script>
+
+</body>
+</html>

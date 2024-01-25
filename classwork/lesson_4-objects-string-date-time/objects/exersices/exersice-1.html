@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+<!--  Создайте пустой объект "футбольная команда".
+Задайте пользователю вопросы:
+- название команды;
+ - город базирования;
+- главный тренер;
+- главная звезда;
+- слоган;
+- в какой лиге она играет.
+
+  И запишите все эти свойства в новосозданный объект.  -->
+
+
+<script>
+    const footballTeam = {};
+    const teamName = prompt("Введите название команды");
+    const teamCity = prompt("Введите город базирования команды");
+    const teamCoach = prompt("Введите имя тренера");
+    const teamMainStar = prompt("Введите имя 'звезды' команды");
+    const teamSlogan = prompt("Введите слоган команды");
+    const teamLeague = prompt("В какой лиге она играет");
+    footballTeam.name = teamName;
+    footballTeam.city = teamCity;
+    footballTeam.coach = teamCoach;
+    footballTeam.mainStar = teamMainStar;
+    footballTeam.slogan = teamSlogan;
+    footballTeam.league = teamLeague;
+    console.log(footballTeam);
+
+
+</script>
+</body>
+</html>

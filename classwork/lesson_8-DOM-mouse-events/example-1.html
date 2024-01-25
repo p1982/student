@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Example 1</title>
+    <style>
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 15px 10px;
+            color: red;
+            border: 1px solid red;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        // function inverseStyle() {
+        //     console.log(this)
+        //     this.style.backgroundColor = "red";
+        //     this.style.color = "white";
+        // }
+    </script>
+</head>
+
+<body>
+    <a id="btn-example" href="#" class="btn" onclick="inverseStyle()">Click me!</a>
+    <a id="btn-example2" href="#" class="btn">Eat me!</a>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const button1 = document.getElementById("btn-example");
+            const button2 = document.getElementById("btn-example2");
+
+            button1.addEventListener("click", function (event) {
+                console.log(event)
+                console.log(this);
+                this.style.backgroundColor = "red";
+                this.style.color = "white";
+            });
+            button1.addEventListener("click", ()=> {
+                console.log("Второе событие");
+            });
+            button1.addEventListener("mouseover", function () {
+                this.style.transition = "0.4s";
+                this.style.padding = "20px 25px";
+            });
+            button1.addEventListener("mouseleave", function () {
+                this.style.padding = "15px 10px";
+            });
+            /*
+            function fun343443c() {
+                console.log(this);
+                this.style.backgroundColor = "red";
+                this.style.color = "white";            
+            }
+            button1.addEventListener("click", fun343443c);
+            */
+
+            button2.addEventListener("click", inverseStyle);
+
+            function inverseStyle() {
+                console.log(this)
+                this.style.backgroundColor = "red";
+                this.style.color = "white";
+            }
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>

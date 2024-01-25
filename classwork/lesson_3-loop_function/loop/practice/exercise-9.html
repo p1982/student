@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+     <!--  Задача: спросить у человека его имя.
+    Если он ввел пустую строку, пробел, просто цифры - переспросить,
+    если нажал Cancel  прервать цикл.
+    Если имя введено - вывести его в консоль" -->
+   
+    
+    <script>
+     let userName = prompt("enter your name") ;
+     let sum = 0;
+     while (!isNaN(userName)){
+         userName = prompt("enter your name");
+         sum++
+     }
+     if(sum){
+         console.log(`${userName}, вы телились ${sum}раз `)
+     }
+
+
+
+    </script>
+
+</body>
+
+</html>

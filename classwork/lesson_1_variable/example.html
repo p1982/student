@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Стоимость товара</h2>
+<p id="product-price"></p>
+<script>
+    const productPrice = +"420.3";
+    // const addPrice = prompt("Введите наценку в грн");
+    const addPrice = 42;
+    const priceContainer = document.getElementById("product-price");
+    priceContainer.textContent = productPrice + addPrice;
+
+</script>
+</body>
+</html>

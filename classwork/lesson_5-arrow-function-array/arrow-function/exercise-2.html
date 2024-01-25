@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--  Напишите функции: 
+1. Возвращающую индекс массы тела. Функция получает будет два аргумента - рост в см и вес в кг.
+2. Функцию, считающую на основе индекса массы тела степень ожирения, если она есть. Критерии можно посмотреть на сайте: 
+http://arzaya.co.il/ru/
+3. Сделайте функции стрелочными.  -->
+    <script>
+        /*
+        10 - 15: анорексия
+        16 - 25: норма
+        26 - 30: лишний вес
+        */
+        const getWeightIndex = (weight, height) => weight/((height/100)**2);
+        
+        const getWeightDiagnose = (weight, height) => {
+            const index = getWeightIndex(weight, height);
+            console.log(index);
+            const different = Math.floor((index - 10)/5);
+            console.log(different)
+            switch(different) {
+                case 0:
+                    return "Анорексия";
+                case 1:
+                case 2:
+                    return "норма";
+                case 3:
+                    return "лишний вес";
+                case 4:
+                    return "I степень ожирения"
+            }
+        }
+        
+//        const userHeight = prompt('enter your height sm?');
+//        const userWeight = prompt('enter your weight kg?');
+        getWeightDiagnose(80, 189);
+        
+        
+        
+    </script>
+</body></html>

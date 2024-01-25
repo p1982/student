@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 6</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 15px 10px;
+            color: red;
+            border: 1px solid red;
+            border-radius: 5px;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <a href="#" data-target="#first-modal" class="btn modal-btn">Open first modal</a>
+        <a href="#" data-target="#second-modal" class="btn modal-btn">Open second modal</a>
+        <a href="#" data-target="#third-modal" class="btn modal-btn">Open third modal</a>
+        <a href="#" data-target="#forth-modal" class="btn modal-btn">Open forth modal</a>
+    </div>
+
+    <div id="first-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Первое модальное окно</p>
+        </div>
+    </div>
+
+    <div id="second-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Второе модальное окно</p>
+        </div>
+    </div>
+
+    <div id="third-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Третье модальное окно</p>
+        </div>
+    </div>
+
+    <div id="forth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Четвертое модальное окно</p>
+        </div>
+    </div>
+
+
+    <!-- Напишите код, который работает так:
+при клике на элемент с классом modal-btn
+показывается соответствующее всплывающее окно.
+Код должен быть универсальным,
+и работать при добавлении/удалении
+кнопок и окон с минимальными правками.
+Менять разметку HTML можно. -->
+
+    <script>
+        /*
+        1. найти все кнопки с классом modal-btn
+        2. на них повесить обработчик события click
+        3. найти селектор модального окна сохранееного в data-target кнопки
+        4. найти модальное окно используя селектор
+        5. поменять у модального окна свойство display на 'block'
+        6. Алина, перетань зевать и все остальные тоже!!!!! и я в том числе
+        7. найти все крестики внутри всех модальных окон
+        8. привязать событие к крестику click
+        9. найти близжайшего родителя с классом modal
+        10. установить для него свойство display "none"
+        */
+        const modalButtons = document.querySelectorAll('.modal-btn');
+        const close = document.querySelectorAll('.modal .close');
+        
+        modalButtons.forEach((item) => {
+            item.addEventListener('click', function () {
+                console.log(this.dataset);
+                const selector = this.dataset.target;
+                // const selector = this.getAttribute("data-target");
+                const modalWindow = document.querySelector(selector);
+                modalWindow.style.display = 'block';
+            });
+        });
+
+        close.forEach((elem) => {
+            elem.addEventListener('click', function () {
+                const modal = this.closest('.modal');
+                modal.style.display = 'none';
+            });
+        })
+
+    </script>
+
+</body>
+
+</html>

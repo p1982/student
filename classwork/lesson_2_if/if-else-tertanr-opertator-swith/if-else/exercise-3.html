@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--  
+ Написать программу, которая будет приветствовать пользователя.
+ Сперва пользователь вводит своё имя, после чего программа выводит в консоль сообщение с учётом его должности.
+
+ Список должностей:
+ Mike — CEO;
+ Jane — CTO;
+ Walter — программист:
+ Oliver — менеджер;
+ John — уборщик.
+
+ Если введёно не известное программе имя — вывести в консоль сообщение «Пользователь не найден.».
+  -->
+<script>
+    const userName = prompt("Введите ваше имя.");
+    const welcomeText = "Добро пожаловать,";
+    if (userName === "Mike") {
+        console.log(welcomeText + " CEO");
+    } else if (userName === "Jane") {
+        console.log(`${welcomeText} СТО`);
+    } else if (userName === "Walter") {
+        console.log(`${welcomeText} программист`);
+    } else if (userName === "Oliver") {
+        console.log("Добро пожаловать, менеджер");
+    } else if (userName === "John") {
+        console.log("Добро пожаловать, уборщик");
+    } else {
+        console.log("Пользователь не найден")
+    }
+
+</script>
+</body>
+</html>

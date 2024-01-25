@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [href="/users"] {
+            color: red;
+        }
+
+        #name {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <a id="myBtn" href="#" data-target-gm="#name" data-korgi="Декстер">CClick</a>
+    <a id="myBtn1" href="/users" data-target="#name" data-korgi="Декстер">CClick</a>
+    <a id="myBtn2" href="/users" data-target="#name" data-korgi="Декстер">CClick</a>
+    <div id="name">ргошьшлшлш</div>
+    <script>
+        const button = document.getElementById("myBtn");
+        const btn = document.querySelectorAll(`[data-target="#name"]`)
+        console.log(btn)
+        const dataAtt = button.getAttribute("data-korgi")
+        button.setAttribute("data-filter", "#name")
+        button.removeAttribute("data-filter")
+        console.log(dataAtt)
+        button.addEventListener("click", () => {
+            const dataName = button.dataset.targetGm
+            const div = document.querySelector(dataName)
+            div.style.display = "block"
+            console.log(div)
+        })
+
+        console.log(button.dataset.target);
+        console.log(button.dataset.korgi);
+    </script>
+</body>
+
+</html>

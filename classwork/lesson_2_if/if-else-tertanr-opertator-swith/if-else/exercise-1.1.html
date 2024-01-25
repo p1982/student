@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!-- Спросите у пользователя  год его рождения.
+Если он ввел пустую строку или  нажал Cancel -
+переспросите его.
+Если ответ будет нормальный - выведите его в консоль. -->
+<script>
+    let userBirthday = prompt("Ваш год рождения?");
+    if (!userBirthday) {
+        userBirthday = prompt("Ваш год рождения?");
+        if (userBirthday) {
+            console.log(userBirthday);
+        }
+        else {
+            console.log("Вы исчерпали свои попытки");
+        }
+    }
+    else {
+        console.log(userBirthday);
+    }
+</script>
+</body>
+</html>

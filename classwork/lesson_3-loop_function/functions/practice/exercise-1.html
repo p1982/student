@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- Спросите у пользователя 3 числа,
+и напишите функцию, которая возвращает наибольшее из 3х чисел -->
+<script>
+        const num1 = +prompt("enter first number");
+        const num2 = +prompt("enter second number");
+        const num3 = +prompt("enter third number");
+        const num4 = +prompt("enter fouth number");
+
+        console.log(getMaxNum(num1, num2, num3, num4));
+        console.log(getMaxNum(5, 8, 3));
+        /*
+        var value1 = 5;
+        var value2 = 8;
+        var value3 = 3;
+        ....
+        delete value1, value2, value3;
+        */
+        console.log(getMaxNum(12, 15, 22));
+        /*
+        var value1 = 12;
+        var value2 = 15;
+        var value3 = 22;
+        ....
+        delete value1, value2, value3;
+        */
+
+
+        function getMaxNum(value1, value2, value3) {
+            if(value1 > value2 && value1 > value3){
+                return value1;
+            }
+            else if(value2 > value1 && value2 > value3){
+                return value2;
+            }
+                return value3;
+        }
+
+
+</script>
+</body>
+</html>

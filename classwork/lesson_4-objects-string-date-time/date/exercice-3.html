@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--  Напишите функцию getAge,
+который в качестве аргумента получает дату
+рождения в формате дд.мм.гггг, и возвращает
+возвраст пользователя на сегодня -->
+
+<script>
+    const dateOfBirth = prompt("Введите Вашу дату рождения в формате дд.мм.гггг");
+    console.log(getAge(dateOfBirth));
+
+    function getAge(date) { // date = "10.03.1990";
+        const now = new Date();
+        const year = date.slice(6);
+        let month = date.slice(3,5);
+        month--;
+        const day = date.slice(0,2);
+        let age = now.getFullYear() - year;
+        if(month > now.getMonth() || (month === now.getMonth() && day > now.getDate())) {
+            age--;
+        }
+        return age;
+    }
+</script>
+</body>
+</html>

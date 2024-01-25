@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .form-group {
+            margin: 20px;
+        }
+
+        .form-group label {
+            display: inline-block;
+            margin-right: 10px;
+            width: 130px;
+        }
+
+        .form-control {
+            margin-right: 10px;
+            height: 20px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-bottom: 0;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            background-image: none;
+            border: 1px solid transparent;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            border-radius: 4px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            color: #fff;
+            background-color: #5bc0de;
+            border-color: #46b8da;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h2>Регистрация</h2>
+    <form action="" id="register-form">
+        <div class="form-group">
+            <label for="user-name">Имя</label>
+            <input type="text" id="user-name" name="user-name" class="form-control" placeholder="Имя">
+        </div>
+        <div class="form-group">
+            <label for="user-last-name">Фамилия</label>
+            <input type="text" id="user-last-name" name="user-last-name" class="form-control" placeholder="Фамилия">
+        </div>   
+        <div class="form-group">
+            <label for="user-email">Email</label>
+            <input type="email" id="user-email" name="user-email" class="form-control" placeholder="Email">
+        </div>  
+        <div class="form-group">
+            <label for="user-password">Пароль</label>
+            <input type="text" id="user-password" name="user-password" class="form-control" placeholder="Пароль">
+        </div>  
+        <div class="form-group">
+            <label for="user-repeat-password">Повторите пароль</label>
+            <input type="text" id="user-repeat-password" name="ususer-repeat-password" class="form-control" placeholder="Повторите пароль">
+        </div>                               
+        <input type="submit" class="btn" value="Регистрация">
+    </form>
+    <!-- 
+        Напишите код, который работает так: 
+        1. Пользователь заполняет поля формы регистрации, 
+        и при перезагрузки страницы заполненные раннее поля остаюся уже заполненными.
+        2. Если он нажимает Submit - все поля в форме очищаются, и при перезагрузки все поля незаполнены.
+      -->
+
+    <script>
+const inputName = document.querySelector('#user-name')
+            // const lastName=document.querySelector('#user-last-name')
+            // const emailUser = document.querySelector('#user-email"')
+            // const passwordUser=document.querySelector('#user-password')
+            // const repeatPassword = document.querySelector('#user-repeat-password')
+            // const btn = document.querySelector('.btn')
+            const registerForm = document.querySelector('#register-form')
+            const storage = localStorage.getItem("formData" )
+            if(storage){
+                const formData= JSON.parse(storage)
+                console.log(inputName.name)
+               const inputs = registerForm.querySelectorAll('input')
+               inputs.forEach(item=>{
+                   
+                   if (item.value !== "Регистрация"&& formData[item.name]){
+                    item.value = formData[item.name]
+
+                   }
+
+               })
+            }
+            // inputName.addEventListener('change',(event)=>{
+            //     console.log(event.target.value)
+            // })
+            const formData = {}
+            registerForm.addEventListener('change',(event)=>{
+                event.preventDefault()
+                
+                
+                
+                
+                if (event.target.value !== "Регистрация") {
+                 formData[event.target.name]= event.target.value
+                    
+
+                }
+                localStorage.setItem("formData",JSON.stringify(formData))
+
+            })
+
+            registerForm.addEventListener('submit',(event)=>{
+                event.preventDefault()
+                
+                const inputs = registerForm.querySelectorAll('input')
+                const formData = {}
+                
+                inputs.forEach(item=>{
+                    
+                    if(item.value!=="Регистрация"){
+                        formData[item.name] = item.value
+                        item.value = ""
+
+                    }
+                    
+                    
+                })
+                    localStorage.removeItem("formData")
+            })
+
+    </script>
+
+
+
+</body>
+
+</html>

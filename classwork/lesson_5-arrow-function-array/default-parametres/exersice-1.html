@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--  Напишите функцию, которая получает 2 параметра: 
+строку и длину одной sms. Функция должна вернуть минимальное количество sms, которое нужно, чтобы 
+отправить эту строку, с учетом таких условий:
+- слова нельзя делить в sms;
+- sms не должно начинаться с пробела;
+
+По умолчанию длина sms равно 30 символам.  -->
+
+    <script>
+        const smsCount = (str, smsLength) => {
+            let count = 0;
+            let start = 0;
+            let end = smsLength;
+            let substr = str.slice(start, end)
+            while (substr.length) {
+                if (str[start + smsLength] === " ") {
+                    start += smsLength;
+                    count++;
+                } else {
+                    start += substr.lastIndexOf(" ");
+                    count++;
+                }
+                end = start + smsLength;
+                substr = str.slice(start, end);
+                if(count === 9){
+                    break;
+                }
+            }
+
+            return count;
+        }
+
+        const string = "Если у вас зависимость от m&m - начните играть в большой теннис. А если при этом вас закроют на карантин - не отчаивайтесь, и ходите по ночам";
+        const count = smsCount(string, 20);
+        console.log(count);
+
+    </script>
+
+</body>
+
+</html>

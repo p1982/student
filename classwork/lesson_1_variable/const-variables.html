@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // let houseName = prompt("Введите имя Великого дома Вестероса");
+    // const words = [
+    //     {
+    //         name: "Ланнистеры",
+    //         words: "Услышь мой рёв!"
+    //     },
+    //     {
+    //         name: "Таргариены",
+    //         words: "Пламя и кровь!"
+    //     }];
+
+    // while (houseName) {
+    //     const house = words.find(item => item.name = houseName);
+    //     if (house) {
+    //         console.log(`Девиз дома ${house.words}`);
+    //     }
+
+    //     houseName = prompt("Введите имя Великого дома Вестероса");
+    // }
+    // var COLOR = "red";
+    // const userName;
+    // const userName = "Александр Петров";
+
+    // Прошло 300 строк
+    // userName = "Сергей Петрович";
+
+    // const color = "red";
+
+    // color = "green";
+    // const userName = "Звездный Элефант";
+    // name = "Похудевший котик";
+
+    // const COLOR = "red";
+    const books = [
+  { 
+    author: "Люсі Фолі",
+    name: "Список запрошених",
+    price: 70 
+  }, 
+  {
+   author: "Сюзанна Кларк",
+   name: "Джонатан Стрейндж і м-р Норрелл",
+  }, 
+  { 
+    name: "Дизайн. Книга для недизайнерів.",
+    price: 70
+  }, 
+  { 
+    author: "Алан Мур",
+    name: "Неономікон",
+    price: 70
+  }, 
+  {
+   author: "Террі Пратчетт",
+   name: "Рухомі картинки",
+   price: 40
+  },
+  {
+   author: "Анґус Гайленд",
+   name: "Коти в мистецтві",
+  }
+];
+
+// const funInvoke = document.getElementById('div');
+
+
+function renderList ( books, parent = document.body){
+    parent.insertAdjacentHTML('beforeend', `<ul>${books.map(item => {
+        return `<li>${item.author}</li>`
+    }).join('')}</ul>`);
+}
+renderList(books);
+// document.body.append(funInvoke);
+</script>
+</body>
+</html>

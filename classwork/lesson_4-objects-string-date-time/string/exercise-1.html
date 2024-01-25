@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!-- 
+Напишите функцию isName, которая проверяет, является ли
+переданный ей аргумент именем. Функция получает в
+качестве аргумента строку, и возвращает true, если:
+- строка содержит больше 2х символов;
+- она начинается не с цифры;
+- она начинается не с пробела;
+- она начинается не со знака доллара ($);
+- она наччинаетя не с нижнего подчеркивания (_)
+-->
+
+<script>
+    // const userName = prompt("Введите имя");
+    // console.log(isName(userName));
+
+    // function isName(str) {
+    //     return (str.length > 2 && isNaN(str[0]) && str[0] !== "_" && str[0] !== "$");
+    // }
+    const name = " DmytroYakovenko"
+function getName(str){
+  if(str.length >2 && isNaN(str[0]) && str[0] !==" " && str[0] !=="$" && str[0]!=="_"){
+   return true
+  }
+return false
+}
+console.log(getName(name))
+
+</script>
+</body>
+</html>

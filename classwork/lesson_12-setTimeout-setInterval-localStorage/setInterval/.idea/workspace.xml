@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a417c179-7fec-40df-b07c-a569d83d7910" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../02.03.2020-loop_function/functions/examples/example-8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02.03.2020-loop_function/functions/examples/example-9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02.03.2020-loop_function/functions/examples/functions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02.03.2020-loop_function/functions/practice/execice-5.v1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02.03.2020-loop_function/functions/practice/exercise-5.v2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02.03.2020-loop_function/functions/practice/exercise-5.v3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02.04.2020-style-dom-elements-keyboard-events/keyboard-events/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02.04.2020-style-dom-elements-keyboard-events/keyboard-events/exercise-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02.04.2020-style-dom-elements-keyboard-events/style-dom-elements/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02.04.2020-style-dom-elements-keyboard-events/style-dom-elements/example-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02.04.2020-style-dom-elements-keyboard-events/style-dom-elements/example-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02.04.2020-style-dom-elements-keyboard-events/style-dom-elements/exercise-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02.04.2020-style-dom-elements-keyboard-events/style-dom-elements/exercise-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02.04.2020-style-dom-elements-keyboard-events/style-dom-elements/exercise-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02.04.2020-style-dom-elements-keyboard-events/style-dom-elements/exercise-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02.04.2020-style-dom-elements-keyboard-events/style-dom-elements/exercise-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.03.2020-arrow-function-array/array/examples/arrray-methods-need.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.03.2020-arrow-function-array/array/examples/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.03.2020-arrow-function-array/array/examples/example-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.03.2020-arrow-function-array/array/examples/example-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.03.2020-arrow-function-array/array/examples/example-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.03.2020-arrow-function-array/array/examples/example-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.03.2020-arrow-function-array/array/examples/example-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.03.2020-arrow-function-array/array/examples/example-7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.03.2020-arrow-function-array/array/examples/example-8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.03.2020-arrow-function-array/array/practice/exercise-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.03.2020-arrow-function-array/array/practice/exercise-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.03.2020-arrow-function-array/array/practice/exercise-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.03.2020-arrow-function-array/array/practice/exercise-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.03.2020-arrow-function-array/array/practice/exercise-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.03.2020-arrow-function-array/array/practice/exercise-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.03.2020-arrow-function-array/arrow-function/example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.03.2020-arrow-function-array/arrow-function/exercise-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.03.2020-arrow-function-array/arrow-function/exercise-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.03.2020-arrow-function-array/arrow-function/exersice-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.03.2020-arrow-function-array/default-parametres/example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.03.2020-arrow-function-array/default-parametres/exersice-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../19.03.2020-repeat-js-DOM-search-elements/repeat-functions/arrow-functions-example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../19.03.2020-repeat-js-DOM-search-elements/repeat-functions/convert-example-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../19.03.2020-repeat-js-DOM-search-elements/repeat-functions/converter-example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../19.03.2020-repeat-js-DOM-search-elements/repeat-functions/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../19.03.2020-repeat-js-DOM-search-elements/repeat-functions/example-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../19.03.2020-repeat-js-DOM-search-elements/repeat-functions/example-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../19.03.2020-repeat-js-DOM-search-elements/repeat-functions/function-declaration-expression-example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../19.03.2020-repeat-js-DOM-search-elements/repeat-functions/functions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../23.03.2020-DOM-search-elements/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../23.03.2020-DOM-search-elements/example-2.1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../23.03.2020-DOM-search-elements/example-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../23.03.2020-DOM-search-elements/example-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../23.03.2020-DOM-search-elements/example-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../23.03.2020-DOM-search-elements/exercise-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../23.03.2020-DOM-search-elements/exercise-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../23.03.2020-DOM-search-elements/exercise-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/1. variables/1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/1. variables/10.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/1. variables/11.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/1. variables/2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/1. variables/3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/1. variables/4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/1. variables/5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/1. variables/6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/1. variables/7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/1. variables/8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/1. variables/9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/1. variables/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/2. basic data types/1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/2. basic data types/2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/2. basic data types/3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/2. basic data types/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/3. arithmetical operations/1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/3. arithmetical operations/2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/3. arithmetical operations/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/4. user interaction/1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/4. user interaction/2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/4. user interaction/3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/4. user interaction/4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/4. user interaction/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/alexandr-2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/console-log.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/const-variables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/js/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/number-type.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/numbers-variables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/practice/1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/practice/2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/practice/3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/practice/4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/practice/5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/practice/6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/scripts-alexandr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/typeof-variables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/variables-name-exercice.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/variables-name.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/variables-types.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/variables-work-together.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../24.02.2020/variables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../25.03.2020-DOM-mouse-events/dataset-example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../25.03.2020-DOM-mouse-events/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../25.03.2020-DOM-mouse-events/exercise-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../25.03.2020-DOM-mouse-events/exercise-2.1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../25.03.2020-DOM-mouse-events/exercise-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../25.03.2020-DOM-mouse-events/exercise-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../25.03.2020-DOM-mouse-events/exercise-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../25.03.2020-DOM-mouse-events/exercise-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../25.03.2020-DOM-mouse-events/exercise-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../25.03.2020-DOM-mouse-events/for-in-of-example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/.idea/alert-prompt-confirm-arithmetical-operators.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/alert-example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/concatenation/1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/concatenation/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/confirm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/increment-decrement.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/operators.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/practice/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/practice/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/practice/.idea/practice.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/practice/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/practice/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/practice/exercise-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/practice/exercise-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/practice/exercise-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/practice/exercise-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/practice/exercise-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/practice/exercise-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/promt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/type-casting/1. string conversion/1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/type-casting/1. string conversion/2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/type-casting/1. string conversion/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/type-casting/2. number conversion/1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/type-casting/2. number conversion/2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/type-casting/2. number conversion/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/type-casting/3. boolean conversion/1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/alert-prompt-confirm-arithmetical-operators/type-casting/3. boolean conversion/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/if-else-tertanr-opertator-swith/if-else/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/if-else-tertanr-opertator-swith/if-else/example-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/if-else-tertanr-opertator-swith/if-else/example-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/if-else-tertanr-opertator-swith/if-else/exercise-1.1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/if-else-tertanr-opertator-swith/if-else/exercise-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/if-else-tertanr-opertator-swith/if-else/exercise-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/if-else-tertanr-opertator-swith/if-else/exercise-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/if-else-tertanr-opertator-swith/if-else/exercise-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/if-else-tertanr-opertator-swith/isNaN-example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/if-else-tertanr-opertator-swith/logical operators/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/if-else-tertanr-opertator-swith/logical operators/example-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/if-else-tertanr-opertator-swith/logical operators/exercise-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/if-else-tertanr-opertator-swith/logical operators/exercise-1.v2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/if-else-tertanr-opertator-swith/logical operators/exercise-1.v3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/if-else-tertanr-opertator-swith/logical operators/exercise-1.v4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/if-else-tertanr-opertator-swith/logical operators/exercise-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/if-else-tertanr-opertator-swith/switch-case/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/if-else-tertanr-opertator-swith/switch-case/exercise-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/if-else-tertanr-opertator-swith/switch-case/exercise-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.02.2020/if-else-tertanr-opertator-swith/ternar-operator/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../30.03.2020-DOM-create-insert-remove-elements/before-after-example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../30.03.2020-DOM-create-insert-remove-elements/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../30.03.2020-DOM-create-insert-remove-elements/exercise-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../30.03.2020-DOM-create-insert-remove-elements/exercise-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../30.03.2020-DOM-create-insert-remove-elements/exercise-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../30.03.2020-DOM-create-insert-remove-elements/exercise-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../30.03.2020-DOM-create-insert-remove-elements/exercise-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../30.03.2020-DOM-create-insert-remove-elements/innerHTML-example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../30.03.2020-DOM-create-insert-remove-elements/remove-example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5.03.2020-objects-string-date-time/date/.idea/date.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5.03.2020-objects-string-date-time/date/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5.03.2020-objects-string-date-time/date/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5.03.2020-objects-string-date-time/date/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5.03.2020-objects-string-date-time/date/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5.03.2020-objects-string-date-time/objects/exersices/.idea/exersices.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5.03.2020-objects-string-date-time/objects/exersices/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5.03.2020-objects-string-date-time/objects/exersices/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5.03.2020-objects-string-date-time/objects/exersices/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5.03.2020-objects-string-date-time/objects/exersices/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5.03.2020-objects-string-date-time/string/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5.03.2020-objects-string-date-time/string/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5.03.2020-objects-string-date-time/string/string-example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../step-project-ham/Step Project Ham Pictures.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../step-project-ham/readme.md" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1b5vS3XZyJtp8m3oyEWyibKMykm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a417c179-7fec-40df-b07c-a569d83d7910" name="Default Changelist" comment="" />
+      <created>1587934765091</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587934765091</updated>
+      <workItem from="1587934766187" duration="732000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

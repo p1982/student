@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exersice 2</title>
+    <style>
+
+        ul {
+            list-style: none;
+        }
+
+        .top-menu {
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar-nav {
+            display: flex;
+        }
+
+        .navbar-nav-link {
+            background-color: #000;
+            text-decoration: none;
+            color: white;
+            font-family: Arial;
+            display: inline-block;
+            padding: 10px 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="top-menu">
+        <ul class="navbar-nav" id="top-menu">
+            <li class="navbar-nav-item">
+                <a href="#" class="navbar-nav-link">HOME</a>
+            </li>
+            <li class="navbar-nav-item">
+                <a href="#" class="navbar-nav-link">ABOUT US</a>
+            </li>
+            <li class="navbar-nav-item">
+                <a href="#" class="navbar-nav-link">OUR FEATURES</a>
+            </li>
+            <li class="navbar-nav-item">
+                <a href="#" class="navbar-nav-link">OUR WORKS</a>
+            </li>
+            <li class="navbar-nav-item">
+                <a href="#" class="navbar-nav-link">BLOG</a>
+            </li>
+            <li class="navbar-nav-item">
+                <a href="#" class="navbar-nav-link">CONTACT US</a>
+            </li>
+        </ul>
+    </div>
+
+<!-- Напишите код, который работает так: при клике на пункт меню
+его фон меняется на красный. Но при этом если до этого был выбран
+ другой пункт меню, у предыдущего выбраного пункта красный фон меняется обратно на черный
+ (чтобы не получилось два красных пункта меню)  -->
+   
+    <script>
+        /*
+        1. найти все пункты меню
+        2. повесить событие 'click' на все пункты меню
+        3. меняем внешний вид пункта меню согласно заданному условию;
+        4. устаровить для всех остальных пунктов меню черный фон;
+        */
+       const topMenuItems = document.querySelectorAll(".navbar-nav .navbar-nav-link");
+       console.log(topMenuItems)
+       topMenuItems.forEach(elem => elem.addEventListener("click", function(){
+            const menuLinks = this.closest("ul").querySelectorAll("a");
+            menuLinks.forEach(link => link.style.backgroundColor = "black");
+            this.style.backgroundColor = "red";
+       }));
+    </script>
+</body>
+
+</html>

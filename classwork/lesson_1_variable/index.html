@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button id="test-btn" data-info="Несломленные. Несгибаемые. Несдающиеся.">Девиз дома Мартеллов</button>
+
+<!--<script src="js/scripts.js"></script>-->
+<script>
+    const button = document.getElementById("test-btn");
+
+    button.addEventListener("click", function () {
+        const words = this.dataset.info;
+        this.insertAdjacentHTML("afterend", "<p>" + words + "</p>");
+        this.insertAdjacentHTML("afterend", `<p>${words}</p>`);
+    });
+</script>
+</body>
+</html>

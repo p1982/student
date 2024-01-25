@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+    Инструкция if-else нужна для того, чтобы совершить какой-то набор действий в зависимости от того, 
+    выполняются ли определенные условия или нет. Работает это так:
+    */
+   console.log(1)
+        const work = prompt("Введите ваше место работы");
+        // const work = confirm("Введите ваше место работы");
+        // alert("Введите ваше место работы");
+        // console.log(work)
+        if(work === "КГБ") {
+            console.log("Вы работаете в Комитете Губокого Бурения");
+        }else if(work==='pilot'){
+            console.log("work as pilot");
+        }
+        else {
+            console.log("Значит мы не можете безнаказанно нарушать ПДД");
+        }
+        if(work === "КГБ") {
+            console.log("Вы работаете в Комитете Губокого Бурения");
+        }
+        if(work==='pilot'){
+            console.log("work as pilot");
+        }
+        if(work !== "КГБ" || work!=='pilot'){
+            console.log("Значит мы не можете безнаказанно нарушать ПДД");
+        }
+    </script>
+</body>
+</html>

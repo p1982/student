@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hard lvl of mading clone!</title>
+</head>
+
+<body>
+<!-- Напишите метод cloneObj,
+полностью копирующий объект без передачи по ссылке  -->
+    <script>
+        const obj1 = {
+            name: "Маленький Йода",
+            friend: "Мандалорец",
+            music: "Eminem",
+            planet: {
+                name: "Татуин",
+                climat: "суше пустыни",
+                status: "no name"
+            }
+        };
+        const obj2 = cloneObj(obj1);
+        console.log(obj2);
+        obj1.planet.name = "Корусант";
+        console.log(obj1.planet.name);
+        console.log(obj2.planet.name);
+
+        function cloneObj(obj) {
+            const newObj = {};
+            for(const key in obj) {
+                if(typeof obj[key] === "object" && obj[key] !== null) {
+                    newObj[key] = cloneObj(obj[key]);
+                    /*
+                     const newObj = {};
+
+                     */
+                }
+                else {
+                    newObj[key] = obj[key];
+                }
+            }
+            return newObj;
+        }
+
+    </script>
+</body>
+
+</html>

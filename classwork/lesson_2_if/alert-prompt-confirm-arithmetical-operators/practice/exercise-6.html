@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--  Спросите у пользователя стоимость квартиры,
+кредитную ставку на ипотеку в год,
+  первый взнос и срок ипотеки.
+  На основе них расчитайте ануитентные платежи
+  в год, итоговую заплаченную сумму и сумму переплаты -->
+
+<script>
+const flatPrice = +prompt("Какая стоимость квартиры?");
+const firstPay = +prompt("Какой первый взнос %?");
+const creditBody = flatPrice-(flatPrice/100*firstPay);
+const creditPercentYear = +prompt("Какой годовой процент по кредиту?");
+const creditPercentMonth = creditPercentYear/100/12;
+const creditTime = +prompt("На сколько лет берете кредит?");
+const creditTimeInMonth = creditTime*12;
+const monthPay = creditBody*(creditPercentMonth+(creditPercentMonth/(((1+creditPercentMonth)**creditTimeInMonth)-1)));
+console.log(monthPay);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exersice 2</title>
+    <style>
+
+        ul {
+            list-style: none;
+        }
+
+        .top-menu {
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar-nav {
+            display: flex;
+        }
+
+        .navbar-nav-link {
+            background-color: #000;
+            text-decoration: none;
+            color: white;
+            font-family: Arial;
+            display: inline-block;
+            padding: 10px 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="top-menu">
+        <div class="navbar-nav" id="top-menu">
+
+                <a href="#" class="navbar-nav-link">HOME</a>
+
+                <a href="#" class="navbar-nav-link">ABOUT US</a>
+
+                <a href="#" class="navbar-nav-link">OUR FEATURES</a>
+
+                <a href="#" class="navbar-nav-link">OUR WORKS</a>
+
+                <a href="#" class="navbar-nav-link">BLOG</a>
+
+                <a href="#" class="navbar-nav-link">CONTACT US</a>
+
+        </div>
+    </div>
+
+<!-- Напишите код, который работает так: при клике на пункт меню
+его фон меняется на красный. Но при этом если до этого был выбран
+ другой пункт меню, у предыдущего выбраного пункта красный фон меняется обратно на черный
+ (чтобы не получилось два красных пункта меню)  -->
+   
+    <script>
+        /*
+        1. найти все пункты меню
+        2. повесить событие 'click' на все пункты меню
+        3. меняем внешний вид пункта меню согласно заданному условию;
+        4. устаровить для всех остальных пунктов меню черный фон;
+        */
+       const topMenuItems = document.getElementsByClassName("navbar-nav-link");
+       for( let i= 0; i< topMenuItems.length ; i++ ){
+            topMenuItems[i].addEventListener("click", function(){
+                const menuLinks = this.parentElement.children;
+                for( const link of menuLinks) {
+                    link.style.backgroundColor = "black";
+                }
+                /*
+                for(let y = 0; y < menuLinks.length; y++) {
+                    const link = menuLinks[0];
+                }
+                */
+                this.style.backgroundColor = "red";
+           });
+
+       }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+    .tooltip .tooltip-text {
+
+        width: 120px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 1;
+        transition: opacity 0.3s;
+    }
+
+    .tooltip .tooltip-text::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+</style>
+
+<body style="text-align:center;">
+
+    <h2>Tooltip</h2>
+    <p>Move the mouse over the text below:</p>
+
+    <div class="tooltip" data-tooltip="Текст подсказки">Hover over me
+    </div>
+    <a href="" class="tooltip" data-tooltip="Несломленные, несгибающиеяся, несдающиеся!">Девиз Мартеллов</a>
+    <!--
+Напишите скрипт, который при наведении на div с классом tooltip создает внутр него всплывающую подсказку - span с классом tooltip-text.
+Пример его работы можно посмотреть здесь https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_tooltip
+Сделайте это с помощью innerHTML
+-->
+    <script>
+
+        const items = document.querySelectorAll('.tooltip')
+        items.forEach(elem => {
+            elem.addEventListener('mouseover', function() {
+                // const span = document.createElement('span');
+                // span.className = 'tooltip-text';
+                // span.textContent = this.dataset.tooltip;
+                // this.append(span);
+                const tooltipText = this.dataset.tooltip;
+                this.insertAdjacentHTML("beforeend", `<span class = 'tooltip-text'>${tooltipText}</span>`)
+            });
+
+            elem.addEventListener('mouseout', function(){
+                const span = this.querySelector('.tooltip-text');
+                span.remove();
+            });
+        })
+    </script>
+</body></html>

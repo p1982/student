@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!-- Напишите функцию, которая проверяет, можно ли человеку
+в таком возврасте получить права. Функция получае
+2 аргумента: возраст и категорию прав. Критерии оценки:
+   - если права категории А1 или А2 - то их можно получить
+   с 16 лет.
+   - права категорий B1, B2 и т.д. - с 18.
+   Функция возвращает true, если переданую категорию
+    можно получить в искомом возрасте, и false, если нет.  -->
+<script>
+    const userAge = Number(prompt("Input your Age:"));
+    const userDriveLicense = prompt("Input your Drive License:");
+
+    console.log(checkUser(userAge, userDriveLicense));
+
+    function checkUser(value1, value2) {
+        if(value1 >= 16 &&(value2 === "A1" || value2 === "A2")){
+            return true;
+        }
+        if(value1 >= 18 && (value2 === "B1" || value2 === "B2")){
+            return true;
+        }
+        return false;
+    }
+</script>
+</body>
+</html>

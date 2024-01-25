@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--
+    спросите у пользователя зарплату в день,
+    после чего спросите у него месяц. 
+    Выведите в консоль сколько он заработает за указанный месяц. 
+    Правило - в месяце, в котором 31 день - 23 рабочих дня,
+    в месяце, в котором 30 дней - 22 рабочих. В феврале 20 рабочих дней.
+    Используйте swith-case
+-->
+<script>
+    const salaryPerDay = +prompt("Какая зарплата в день?")
+    const monthNumber = +prompt("Введите номер месяца?")
+    let salaryPerMonth = null;
+    switch (monthNumber) {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            salaryPerMonth = 23*salaryPerDay;
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            salaryPerMonth = 22*salaryPerDay;
+            break;
+        case 2:
+            salaryPerMonth = 20*salaryPerDay;
+            break;
+        default:
+            console.log("Вы ввели не правильный нмоер месяца")
+        }
+        if (salaryPerMonth) {
+            console.log(`Ваша зарпата за указанный месяц ${salaryPerMonth}`);
+        }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- напишите функцию isAdult,
+    которая получает в качестве
+    аргумента строку, которую нужно
+    проверить на спам, и спам-слово.
+    Функция  возвращает true если в
+    строке хотя бы раз встречается спам-слово,
+    и false, если нет.
+    Строку для проверки спросите
+    у пользователя через prompt,
+    как и спам-слово.  -->
+    <script>
+        function isAdult(str, adultStr) {
+            str = str.toLowerCase();
+            adultStr = adultStr.toLowerCase();
+            return str.includes(adultStr);
+        }
+        const str1 = `Профессионал - это не тот, кто играет до
+        красиво забитого гола и личностного кризиса, а тот,
+        кто играет до последней секунды последней минуты матча.`;
+
+        const spamWord = prompt("Введите спам слово");
+        console.log(isAdult(str1,spamWord));
+    </script>
+</body>
+
+</html>

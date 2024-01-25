@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+С помощью модальных окон получить от пользователя 3 числа
+и вывести в консоль их среднее арифметическое значение.
+ 
+Если в качестве одного из трёх значений пользователь
+ввёл не число — вывести сообщение:
+«⛔️ Ошибка! Все три введённых значения должны быть числами!».
+Среднее арифметическое значение в таком случае вычислять не нужно.
+ */
+        const number1 = prompt("Enter number 1");
+        console.log(isNaN(number1));
+        const number2 = prompt("Enter number 2");
+        console.log(isNaN(number2));
+        const number3 = prompt("Enter number 3");
+        console.log(isNaN(number3));
+        if (isNaN(number1) || isNaN(number2) || isNaN(number3) || number1 === null || number2 === null || number3 === null) {
+            alert("Ошибка! Все три введённых значения должны быть числами!");
+        } else {
+            const result = (number1 + number2 + number3) / 3;
+            console.log(result);
+        }
+
+    </script>
+</body>
+
+</html>
+

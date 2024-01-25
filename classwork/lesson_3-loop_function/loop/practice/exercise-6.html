@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!-- Задача: Пользователь вводит количество своих предметов
+в этом семестре.
+После чего спросить у него оценки за каждый предмет,
+посчитать сколько оценок равны 10 и больше,
+и вывести их число на экран.
+Сравнение введеной оценки с 10
+и запись ее в счетчик должно быть сделано с помощью минимума строк  -->
+<script>
+    const subjectCount = prompt("Введите количество своих предметов");
+    let highLevelMarks = 0;
+    for (let i = 1; i <= subjectCount; i++){
+        const mark = +prompt(`Оценка за предмет ${i}`);
+        if (mark>=10) {
+            highLevelMarks++;
+        }
+    }
+    console.log(highLevelMarks);
+</script>
+</body>
+</html>

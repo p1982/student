@@ -1,0 +1,37 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+<!-- У вас есть 2 секты - Свидетели Иеговы и Адвентисты Седьмого дня. Создайте массив тех, кто попадет в Рай, состоящий из тех людей в первом списке, которых нет во втором   -->
+    <script>
+        const jehovahWitnesses = ["Любовь Валерьевна", "Лев Александрович", "Поручик Ржевский", "Толстый сосед", "Анастасия Андреевна", "Александр Петрович"];
+
+        const SeventhDayAdventists = ["Любовь Валерьевна", "Анастасия Клочко", "Поручик Ржевский", "Толстый сосед", "Александр Сергеевич", "Александр Петрович"];
+        /*
+        const arrHaven = jehovahWitnesses.filter(function(person){            
+            return  !SeventhDayAdventists.includes(person);
+        });
+        */
+        const arrHaven = jehovahWitnesses.filter((person) => !SeventhDayAdventists.includes(person));
+        console.log(arrHaven);
+                                                 
+
+    </script>
+</body>
+  </html>
+  
+  
+  
+  
+   

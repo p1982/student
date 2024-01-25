@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <ol id="list">
+        <li>Толстый котик</li>
+        <li>Корги</li>
+        <li>Ника</li>
+        <li>Маленький Йода</li>
+    </ol>
+<!--  Спросите у пользователя через prompt элемент списка с каким текстом (Толстый котик/Корги/Ника/Маленький Йода) тут не нужен. После чего удалите его.  -->
+    <script>
+     /*
+     1. задать пользователю вопрос с помощью prompt
+     2. сохранить в перемеенную ссылку на  список элементов с id="list"
+     3. перебрать этот список и найти элемент с текстовым содержимым , кот ввел пользователь
+     4. удалить этот элемент
+     */
+     let removeItemText = prompt("Какой  элемент удалить?");
+     const listItems = document.querySelectorAll("#list li");
+     for(let i = 0; i < listItems.length; i++) {
+         if(listItems[i].textContent === removeItemText) {
+             listItems[i].remove();
+             break;
+         }
+     }
+     /*
+     listItems.forEach(elem =>{
+         if(elem.textContent === removeItemText){
+             elem.remove();
+         }
+     });
+     */
+    //  listItems.forEach(elem => (elem.textContent === removeItemText) ? elem.remove() : "");
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="people-list">
+        <li>Анасуримбор Келлхус</li>
+        <li>Анасуримбор Моэнгхус</li>
+        <li>Друз Ахкеймион</li>
+        <li>Найюр урс Скиоата</li>
+        <li>Серве хил Кейалти</li>
+        <li>Икурей Ксерий</li>
+        <li>Ауранг</li>
+        <li>Ауракс</li>
+    </ul>
+    <!--   
+        1. Уберите у списка маркеры.
+       2. Сделайте шрифт в элементах списка жирным.
+       3. Сделайте каждый второй элемент списка - на сером фоне.
+       Используйте children    
+    -->
+    <script>
+        const list = document.getElementById("people-list");
+        list.style.listStyle = "none";
+        list.style.fontWeight = "bold";
+        const listItems = list.children;
+        for(let i = 1; i < listItems.length; i+=2){
+            listItems[i].style["background-color"] = "grey";
+        }
+    </script>
+
+</body>
+
+</html>

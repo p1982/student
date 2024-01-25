@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+        ul {
+            list-style: none;
+        }
+
+        .top-menu {
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar-nav {
+            display: flex;
+        }
+
+        .navbar-nav-item {}
+
+        .navbar-nav-link {
+            background-color: #000;
+            text-decoration: none;
+            color: white;
+            font-family: Arial;
+            display: inline-block;
+            padding: 10px 15px;
+        }
+
+        .navbar-nav-link.active {
+            background-color: orange;
+        }
+
+        .btn-example {
+            position: absolute;
+            bottom: -500px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #000;
+            text-decoration: none;
+            color: white;
+            font-family: Arial;
+            display: inline-block;
+            padding: 10px 15px;
+        }
+        
+        .btn-example.active {
+            background-color: orange;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="top-menu">
+        <ul class="navbar-nav" id="top-menu">
+            <li class="navbar-nav-item">
+                <a href="#" class="navbar-nav-link">HOME</a>
+            </li>
+            <li class="navbar-nav-item">
+                <a href="#" class="navbar-nav-link">ABOUT US</a>
+            </li>
+            <li class="navbar-nav-item">
+                <a href="#" class="navbar-nav-link">OUR FEATURES</a>
+            </li>
+            <li class="navbar-nav-item">
+                <a href="#" class="navbar-nav-link">OUR WORKS</a>
+            </li>
+            <li class="navbar-nav-item">
+                <a href="#" class="navbar-nav-link">BLOG</a>
+            </li>
+            <li class="navbar-nav-item">
+                <a href="#" class="navbar-nav-link">CONTACT US</a>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        /*
+        Напишите код, который работает так: 
+        1. При  клике на пункт меню к нему добавляется класс active.
+        2. У остальных пунктов меню этот класс убирается.
+        Используйте всплытие событий.
+        */
+
+        /*
+        1. Получить ссылку на елемент с id 'top-menu'
+        2. Повесить событие 'click' на елемент
+        3. Получить ссылку на пунк меню на котором произошло собитие 'click'
+        - получить ссылку на пункт меню на котором есть класс 'active' и удалить класс 'active'
+        - добавить класс active пункту меню на котором произошло событие 'click'
+        */
+
+        const navbar = document.getElementById('top-menu')
+        navbar.addEventListener('click', function(event) {
+            const prevActiveItem = this.querySelector('.active');
+            if (prevActiveItem){
+                prevActiveItem.classList.remove('active');
+            };
+            event.target.classList.add('active');
+        })
+    </script>
+</body>
+
+</html>

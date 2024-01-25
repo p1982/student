@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .form-control {
+            margin-right: 10px;
+            height: 20px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-bottom: 0;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            background-image: none;
+            border: 1px solid transparent;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            border-radius: 4px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            color: #fff;
+            background-color: #5bc0de;
+            border-color: #46b8da;
+        }
+
+        .close {
+            color: red;
+            position: absolute;
+            top: 0px;
+            right: -15px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+        .close:hover {
+            background-color: red;
+            color: white;
+        }
+
+        .case-item {
+            position: relative;
+
+        }
+
+        .case-list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>Список дел</h2>
+    <ol id="case-list" class="case-list">
+
+    </ol>
+  
+    <!-- Задача: в цикле спрашивать у пользователя с помощью prompt дело, и выводить его внутрь 
+        тега с id="case-list" как элемент списка на экран. Если пользователь ввел пробел или пустую строку - 
+        дело не добавлять, но спросить следующее. 
+Если он нажет Cancel - цикл прекратить. -->
+
+    <script>
+        /*
+        1. сохранить  ссылку на элемент с id case-list
+        2. спросить у пользователя с помощью prompt дело
+        3. запустить цикл while
+            - пока пользователь не нажал cancel
+        4. в цикле прописать условие if
+            - в нем создать dom элемент list , с введенным пользователем делом
+        5. втавить его внутрь элемента с id case list
+        6. спросить следующее дело
+        */
+            const caseList = document.getElementById('case-list');
+            let caseText = prompt('Дело?');
+            while (caseText !== null) {
+                if (caseText) {
+                    // const listItem = document.createElement('li');
+                    // listItem.textContent = caseText;
+                    // caseList.append(listItem);
+                    caseList.insertAdjacentHTML('beforeend', `<li>${caseText}</li>`);
+                }
+                caseText = prompt ('Дело?');
+            }
+    </script>
+
+
+
+</body>
+
+</html>

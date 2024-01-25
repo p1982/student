@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- Спросить у пользователя рост в см и вес в кг. На их основании
+   посчитать индекс массы тела по формуле: вес разделить на рост в метрах
+   в квадрате. Вывести результат в консоль. -->
+<script>
+const userHeight = +prompt("Какой ваш рост в см? ");
+const userWeight = +prompt("Какой ваш вес в кг? ");
+
+const indexOfWeight = +(userWeight / ((userHeight/100)**2)).toFixed(1);
+console.log(indexOfWeight);
+console.log(typeof(indexOfWeight));
+</script>
+</body>
+</html>

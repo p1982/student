@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+   <form action="" id="year-form">
+        <input type="text" id="year" name="user-year" placeholder="Введите год">
+        <button id="is-leap-year" data-target="year">Узнать</button>       
+   </form>
+
+    <div id="leap-year-result"></div>
+    <!--  Задача: пользователь вводит в поле ввода год. 
+        Вывести внутри тега p с id leap-year-result ответ - 
+        высокосный год или нет, с задержкой 0.5 секунды.
+        Для выполнения задания напишите 2 функции:
+        1. Функцию isLeapYear, которая в качестве аргумента получает год и возвращает
+        true, если год высокосный, и false - если нет.
+        2. Функцию renderIn, которая получает 2 аргумента:
+        - css-селектор;
+        - HTML-разметку;
+        Эта функция должна вывести в теге, соответствующем css-селектору,
+        переданную ей HTML-разметку.   -->
+    <script>
+        const leapYearForm = document.getElementById("year-form");
+        leapYearForm.addEventListener("submit", function(e){
+            e.preventDefault();             
+            const year = this.querySelector("#year").value;
+            const result = isLeapYear(year);
+            const prefix = (result) ? "" : "не";
+            const submitResult = `<p><strong>${year}</strong> - ${prefix}высокосный</p>`;
+            setTimeout(renderIn, 1500, "#leap-year-result", submitResult);
+        })
+
+        function isLeapYear(year) {
+            const februalDays = new Date(year, 2, 0).getDate();
+            return februalDays === 29;
+        }
+
+        function renderIn(selector, markup) {
+            const elem = document.querySelector(selector);
+            elem.insertAdjacentHTML("beforeend", markup);
+        }
+
+    </script>
+</body>
+
+</html>

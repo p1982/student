@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--  Перед вами перечень государств Внутренней Сферы. 
+   Если в нем есть Свободная Республика Расалхаг, то замените ее на Доминион Призрачного Медведя. 
+   Если в нем есть Федерация Солнц и Лиранский Альянс - замените их одним государством Федеративное Содружество. 
+   Если в нем нет государства Свободная Марка - вывести сообщение "Республика непризнана"  -->
+    <script>
+        // Перед вами
+        const statesInsideSphere = ["Синдикат Дракона", "Конфедерация Капеллы", "Федерация Солнц", "Лиги Свободных миров", "Лиранский Альянс", "Свободная Республика Расалхаг"];
+        console.log(statesInsideSphere);
+        let index = statesInsideSphere.indexOf("Свободная Республика Расалхаг");
+        if(index != -1){            
+            statesInsideSphere[index] = "Доминион Призрачного Медведя";
+        }
+        console.log(statesInsideSphere);
+        let index1 = statesInsideSphere.indexOf("Федерация Солнц");
+        let index2 = statesInsideSphere.indexOf("Лиранский Альянс");
+        if(index1 != -1 && index2 != -1){
+        
+            statesInsideSphere[index1] = "Федеративное Содружество";
+            statesInsideSphere.splice(index2, 1);
+//            delete statesInsideSphere[index2];
+        }
+        console.log(statesInsideSphere);
+        if(!statesInsideSphere.includes("Свободная Марка")){
+            console.log("Республика непризнана");
+        }
+        
+    </script>
+    
+    
+    
+    
+</body>
+</html>

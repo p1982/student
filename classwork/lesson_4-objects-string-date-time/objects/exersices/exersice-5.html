@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+ Напишите объект "Кредитная карта", который имеет свойства:
+- правильный pin code;
+- количество попыток ввода пин-кода, которые остались;
+- количество денег на счету;
+- кредитный лимит;
+- статус (активна или заблокирована).
+И методы:
+- снять деньги. Получает введный пользователем пин код и желаемую сумму.
+Проверяет, заблокирована ли карта.
+Если да - возвращает сообщение "Карта заблокирована,
+обратитесь в банк". Если нет - сверяет пин-код с правильным.
+Если все ок - проверяет хватит ли денег с учетом лимита.
+Если все ок - возвращет сумму и уменьшает деньги на счету
+с учетом лимита.
+Если сумма слишком большая - возвращает строку "Средств недосточно".
+Если пин-код неправильный - уменьшает количество
+попыток ввода на 1 и если их осталось 0 - меняет статус на "заблокирована"
+-->
+<script>
+    // Write the function detectNetwork. It should accept a string or a number for its cardNumber argument and, based on the provided cardData, return the appropriate network string (or undefined if there's no match).
+
+
+var cardData = [
+  {
+    'issuer/network': 'Visa',  // card issuer (network)
+    prefixes: ['4'],	       // beginning digits
+    lengths: [13, 16, 19]      // lengths of card numbers
+  },
+  {
+    'issuer/network': 'Mastercard',
+    prefixes: ['51', '52', '53', '54', '55'],
+    lengths: [16]
+  },
+  {
+    'issuer/network': 'American Express',
+    prefixes: ['34', '37'],
+    lengths: [15]
+  },
+  {
+    'issuer/network': 'Diner\'s Club',
+    prefixes: ['38', '39'],
+    lengths: [14]
+  }
+];
+
+function detectNetwork(cardNumber, cardData) {
+  // your solution here
+}
+
+// example
+var network = detectNetwork('343456789012345', cardData);
+console.log(network); // --> 'American Express'
+
+    function findPairForSum(integers, target) {
+  // your solution here
+  var pair = []
+  for (var i = 0 ;i<integers.length; i++){
+    if(target-integers[i] === 5){
+      pair.push(integers[i])
+      console.log(pair)
+    }
+  }
+  return pair
+}
+
+// example
+var pair = findPairForSum([3, 34, 4, 12, 5, 2], 9);
+console.log(pair); // --> [4, 5]
+
+    const creditCard = {
+        pinCode: 4321,
+        tryCount: 3,
+        money: 20000,
+        creditMoney: 30000,
+        status: "active",
+        messages: {
+            block: "Карта заблокирована. Обратитесь в банк",
+            getMoney: "Получите ваши деньги",
+            notEnought: "На вашем счету недостаточно средств",
+            wrongPin: "Неправильный пин-код"
+        },
+        createAnswer(value, answer) {
+            return {
+                response: value,
+                status: this.status,
+                message: this.messages[answer]
+            };
+        },
+        getCash(pin, wantMoney) {
+            if (this.status !== "active") {
+                return this.createAnswer(false, "block");
+            }
+            if (this.pinCode === pin) {
+                if ((this.money + this.creditMoney) >= wantMoney) {
+                    this.money -= wantMoney;
+                    if (this.money < 0) {
+                        this.creditMoney += this.money;
+                        this.money = 0;
+                    }
+                    return this.createAnswer(true, "getMoney");
+                } else {
+                    return this.createAnswer(false, "notEnought");
+                }
+                this.tryCount = 3;
+            } else {
+                this.tryCount--;
+                if (!this.tryCount) {
+                    this.status = "block";
+                    return this.createAnswer(false, "notEnought");
+                    // return {
+                    //     response: false,
+                    //     status: this.status,
+                    //     message: `${this.messages.wrongPin}. ${this.messages.block}`
+                    // };
+                } else {
+                    return this.createAnswer(false, "wrongPin");
+                }
+            }
+        }
+    };
+
+    let wantMoney = +prompt("Введите желаемую сумму");
+    let pinCode = +prompt("Введите пин-код");
+    let answer = creditCard.getCash(pinCode, wantMoney);
+    while(!answer.response && answer.status === "active") {
+        alert(answer.message);
+        wantMoney = +prompt("Введите желаемую сумму");
+        pinCode = +prompt("Введите пин-код");
+        answer = creditCard.getCash(pinCode, wantMoney);
+    }
+    alert(answer.message);
+
+</script>
+</body>
+</html>
